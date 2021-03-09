@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+body p,a,span{
+	font-family: 'Roboto', sans-serif;
+}
+.continer{
+	width: 1170px;
+	margin: auto;
+}
+header {
+    background: white;
+    border-bottom: 2px solid black;
+    box-shadow: 0px -3px 6px 3px black;
+}
+nav{
+	width: 1170px;
+	margin: auto;
+	overflow: hidden;
+}
+.main_logo {
+    width: 250px;
+    height: 70px;
+    font-size: 52px;
+    margin: 0px;
+    float: left;
+    color: black;
+    margin-top: 3px;
+    font-family: cursive;
+}
+
+ul{
+    width: 579px;
+    float: right;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    padding: 29px 20px;
+    padding-left: 33px;
+    margin-left: 0px;
+}
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s;
+    color: black;
+    font-size: 16px;
+    position: relative;
+}
+ul li a:hover{
+	color: #ff002f;
+	
+}
+ul li a::before{
+	content: "";
+	height: 15%;
+	width: 100%;
+	background: #ff002f;
+	position: absolute;
+	top: 236%;
+	left: 0%;
+	opacity: 0;
+	transition: all 1s;
+}
+ul li a:hover::before{
+		opacity: 1;
+}
+#whoIam{
+	overflow: hidden;
+	padding: 40px 0px;
+}
+.whoIam_left {
+    width: 585px;
+    float: left;
+}
+.whoIam_left p{
+    padding: 22px 0px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.whoIam_left h1{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 70px;
+}
+.nameColor{
+	color: #ff002f;
+}
+
+.whoIam_right {
+    width: 585px;
+    float: right;
+}
+.whoIamImg img {
+    height: 280px;
+    width: 92%;
+    margin-top: 5px;
+}
+#aboutIam{
+	overflow: hidden;
+	padding: 30px 0px;
+	background: whitesmoke;
+}
+.about_leftSide {
+    width: 585px;
+    float: left;
+    padding: 39px 0px;
+}
+.about_leftSide h1{
+	padding-bottom: 20px;
+	position: relative;
+}
+.about_leftSide h1::before{
+	content:"";
+	top: 32px;
+	right: 538px;
+	background: #000000;
+	position: absolute;
+	width: 8%;
+	height: 7%;
+}
+.about_leftSide span{
+    font-size: 20px;
+}
+.about_leftSide p{
+    font-size: 15px;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+
+.about_rightSide {
+    width: 585px;
+    float: right;
+}
+button.aboutMe_button {
+    background: #ff002f;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-right: 11px;
+    border: none;
+    border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+button.aboutMe_button:hover {
+	background: #e4163d;
+    color: white;
+}
+button.aboutMe_button:first-child{
+	margin-left: 0px;
+}
+.about_leftSide_img img{
+    height: 421px;
+    background: #eedda940;
+    margin-left: 206px;
+    box-shadow: 10px 10px 0px 10px #ff002f;
+}
+section#myServices {
+    height: 440px;
+}
+.service_titleBar{
+    text-align: center;
+    margin-left: 350px;
+    width: 500px;
+    padding: 40px 0px;
+}
+.service_titleBar h1{
+	display: inline-block;
+	position: relative;
+	padding-bottom: 15px;
+}
+.service_titleBar h1::before{
+	content:"";
+	top: 29px;
+	right: 22px;
+	background: #000000;
+	position: absolute;
+	width: 55%;
+	height: 6%;
+}
+.serviceBox_1{
+	width: 270px;
+	float: left;
+	padding: 20px 20px;
+	margin: 0px 40px;
+	text-align: center;
+	box-shadow: 0px 0px 17px 0px #00000091;
+}
+.serviceBox_1 i{
+    color: white;
+    font-size: 41px;
+    padding-bottom: 10px;
+    background: #d2d2d2;
+    padding: 11px 14px;
+    border-radius: 50%;
+}
+.serviceBox_1 h2{
+    padding: 10px 10px;
+}
+.serviceBox_1:last-child{
+	margin-right: 0px;
+}
+
+/***SKILL SECTION CODE ***/
+section#skillSection {
+    height: 440px;
+    background: whitesmoke;
+}
+.leftSectionSkill {
+    width: 48%;
+    float: left;
+    margin-top: 50px;
+}
+
+.rightSectionSkill {
+    width: 48%;
+    float: right;
+    margin-top: 50px;
+}
+.leftSectionSkill h2 {
+    color: black;
+    font-size: 30px;
+}
+p.skp2 {
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+p.skp2 i{
+	color: #ff002f;
+	margin-right: 5px;
+}
+.leftSectionSkill p.skp1 {
+    text-align: justify;
+    padding: 20px 0px;
+    line-height: 25px;
+}
+.mainProgress {
+    height: 20px;
+    background: #dedede52;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.myProgressItem {
+    padding: 12px 0px;
+}
+.myProgressItem p {
+    margin-bottom: 5px;
+}
+.innerProgress.cssProg {
+    background: rgb(127 197 199);
+    height: 20px;
+    width: 84%;
+}
+.innerProgress.jqProg {
+    background: rgb(141 169 206);
+    height: 20px;
+    width: 94%;
+}
+
+.innerProgress.wpProg {
+    background: rgb(51, 186, 204);
+    height: 20px;
+    width: 79%;
+}
+
+.innerProgress.joomlaProg {
+    background: rgb(76, 233, 194);
+    height: 20px;
+    width: 87%;
+}
+
+.innerProgress.seoProg {
+    background: rgb(46 118 125);
+    height: 20px;
+    width: 75%;
+}
+.finalSection {
+    overflow: hidden;
+    width: 100%;
+    padding: 92px 10px;
+}
+.finalSectionLeft {
+    width: 48%;
+    float: left;
+}
+.finalSectionRight {
+    width: 32%;
+    float: right;
+    border-bottom: 20px solid #ff002f;
+    border-right: 20px solid #ff002f;
+    background: #eedda940;
+}
+.finalSectionLeft h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.finalSection p {
+    padding: 5px 0px;
+    line-height: 26px;
+}
+.inputFrom input{
+    display: block;
+    width: 91%;
+    float: left;
+    margin: 10px 0px;
+    height: 30px;
+    border: 1px solid #bbbbbb;
+    outline: none;
+    border-radius: 4px;
+    padding: 3px 12px;
+}
+.inputFrom textarea {
+    display: block;
+    width: 91%;
+    float: left;
+    border: 1px solid #bbbbbb;
+    outline: none;
+    border-radius: 4px;
+    padding: 3px 12px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+input.contbtn {
+    background: #aab783;
+    color: #462929;
+    width: 166px;
+    font-size: 17px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    padding: 9px 0px;
+    height: 45px;
+}
+button.aboutMe_button_2 {
+    background: #ff002f;
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    margin-right: 11px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button.aboutMe_button_2:hover {
+	background: #e4163d;
+    color: white;
+}
+.finalSectionRight img {
+    height: 431px;
+    margin-bottom: -4px;
+}
+footer.footerSection {
+    background: black;
+    color: white;
+    padding: 40px 0px;
+}
+
+.copyLeft {
+    width: 400px;
+    float: left;
+    margin-top: -3px;
+}
+.copyLeft p {
+    font-size: 17px;
+}
+.iconFtRight {
+    float: right;
+    font-size: 18px;
+    margin-top: -3px;
+}
+.iconFtRight span {
+	padding-right: 7px;
+}
+.iconFtRight i {
+    padding: 0px 8px;
+    cursor: pointer;
+}
+
